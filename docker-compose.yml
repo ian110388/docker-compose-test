@@ -15,10 +15,10 @@ services:
       - dokploy-network
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.dashboard-test-belqzc-next-app-1.rule=Host(`ivanserver.me`)"
-      - "traefik.http.routers.dashboard-test-belqzc-next-app-1.entrypoints=websecure"
-      - "traefik.http.routers.dashboard-test-belqzc-next-app-1.tls.certResolver=letsencrypt"
-      - "traefik.http.services.dashboard-test-belqzc-next-app-1.loadbalancer.server.port=3000"
+      - "traefik.http.routers.dashboard-test-belqzc.rule=Host(`ivanserver.me`)"
+      - "traefik.http.routers.dashboard-test-belqzc.entrypoints=websecure"
+      - "traefik.http.routers.dashboard-test-belqzc.tls.certResolver=letsencrypt"
+      - "traefik.http.services.dashboard-test-belqzc.loadbalancer.server.port=3000"
 networks:
   dokploy-network:
     external: true
